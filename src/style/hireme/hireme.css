@@ -1,0 +1,148 @@
+.wraper-title {
+  font-size: 10rem;
+  font-family: dancing script;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+.hire-wraper {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: #f8f9fa;
+  margin: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hire-wraper .title {
+  font-size: 6rem;
+  text-transform: capitalize;
+  font-family: dancing script;
+}
+
+.hire-wraper .hire-desc {
+  font-size: 2.5rem;
+  margin: 3rem 0;
+}
+
+.hire-wraper form {
+  margin-top: 5rem;
+}
+
+.hire-wraper input {
+  border: 0;
+  font-size: 1.6rem;
+  margin: 3rem 0;
+  -webkit-box-shadow: 0 0 2rem rgba(69, 67, 96, 0.1);
+          box-shadow: 0 0 2rem rgba(69, 67, 96, 0.1);
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  height: 6rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  padding-left: 4rem;
+  color: #454360;
+}
+
+.hire-wraper input::-webkit-input-placeholder {
+  color: #4543606e;
+  font-size: 2rem;
+}
+
+.hire-wraper input:-ms-input-placeholder {
+  color: #4543606e;
+  font-size: 2rem;
+}
+
+.hire-wraper input::-ms-input-placeholder {
+  color: #4543606e;
+  font-size: 2rem;
+}
+
+.hire-wraper input::placeholder {
+  color: #4543606e;
+  font-size: 2rem;
+}
+
+.hire-wraper .form-control:focus {
+  border: none !important;
+  -webkit-box-shadow: 0 0 2rem rgba(69, 67, 96, 0.1) !important;
+          box-shadow: 0 0 2rem rgba(69, 67, 96, 0.1) !important;
+  outline: none !important;
+}
+
+.hire-wraper textarea {
+  height: 13rem;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+.hire-wraper .textarea::-webkit-input-placeholder {
+  color: #4543606e;
+  font-size: 2rem;
+}
+
+.hire-wraper .textarea:-ms-input-placeholder {
+  color: #4543606e;
+  font-size: 2rem;
+}
+
+.hire-wraper .textarea::-ms-input-placeholder {
+  color: #4543606e;
+  font-size: 2rem;
+}
+
+.hire-wraper .textarea::placeholder {
+  color: #4543606e;
+  font-size: 2rem;
+}
+
+.hire-wraper .send-btn {
+  border: none;
+  padding: 1.5rem 4rem;
+  margin: 5rem 0;
+  background-color: #FF4C60;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  font-family: jost;
+  position: relative;
+  overflow: hidden;
+}
+
+.hire-wraper .send-btn:hover {
+  background-color: #fff;
+  color: #111;
+  transform: translateY(-1rem);
+  -webkit-transform: translateY(-1rem);
+  -moz-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  -o-transform: translateY(-1rem);
+  -webkit-box-shadow: 0 0 2rem #FF4C60;
+          box-shadow: 0 0 2rem #FF4C60;
+}
+/*# sourceMappingURL=hireme.css.map */

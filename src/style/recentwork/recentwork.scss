@@ -1,0 +1,58 @@
+@import '../mixin';
+
+a{
+    text-decoration: none;
+
+}
+.tag{
+    border: none;
+    background-color: transparent;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border-bottom:0.3rem solid transparent;
+    margin-left: 2rem;
+    font-family: jost;
+    letter-spacing: 0.2rem;
+
+}
+.tag:hover{
+    color: hotpink;
+   
+}
+.work-wraper{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    & .work-title{
+@include wrapperTitle;
+
+    }
+
+
+}
+.work-wraper .active,.work-wraper .active {
+    font-weight: bold;
+    border-bottom:0.3rem solid hotpink;
+    color: hotpink;
+}
+.imgbox{
+    display: flex;
+    position: relative;
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+}
+
+
+
+    
+
+
+
+.imgbox:hover{
+    box-shadow: 0 0 1.5rem rgba(190, 86, 86, 0.4);
+}
+
+

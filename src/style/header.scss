@@ -1,0 +1,169 @@
+
+// font-family: 'Dancing Script', cursive;
+// font-family: 'Jost', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Baloo Da 2', cursive;
+@import './_variables';
+@import './mixin';
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background:$banner-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction:column;
+font-family: 'Montserrat', sans-serif;
+& .img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 30rem;
+   
+    @include bradius(50%);
+    overflow: hidden;
+    // border: 1rem solid #444;
+    position: relative;
+
+}
+& .img-box:before{
+    content: '';
+    position: absolute;
+    width: 40rem;
+    height: 20rem;
+    background: linear-gradient(#00ccff,#d400d4);
+    // z-index: 100;
+    animation: animate 4s linear infinite;
+    -webkit-animation: animate 4s linear infinite;
+}
+& .img-box::after{
+    content: '';
+    position: absolute;
+    inset:1rem;
+    @include bradius(50%);
+    background-image:url(../component/images/bg1.jpg) ;
+    background-size: cover;
+    background-position: center;
+  
+
+   
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+100%{
+    transform: rotate(350deg);
+    -webkit-transform: rotate(350deg);
+    -moz-transform: rotate(350deg);
+    -ms-transform: rotate(350deg);
+    -o-transform: rotate(350deg);
+}
+    
+}
+
+& img{
+    object-fit: cover;
+   
+z-index: 99;
+   opacity:0;
+   @include bradius(50%);
+
+}
+
+& .info-wraper{
+    width: 70%;
+    & .green{
+        color:#dc3545;
+    }
+    & .para{
+        color: rgb(216, 210, 210);
+        line-height: 4rem;
+
+        letter-spacing: 0.2rem;
+    }
+    & .hiremebtn{
+        background-color: #333;
+        border:0.2rem solid blue;
+        padding: 1.5rem 4rem ;
+        margin: 3rem 0;
+        box-shadow: 0 0 3rem rgba(0, 0, 255, 0.637);
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 0.2rem;
+        border-radius: 2rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+        font-family: 'Jost', sans-serif;
+        transition:all 0.2s ease-in ;
+        -webkit-transition:all 0.2s ease-in ;
+        -moz-transition:all 0.2s ease-in ;
+        -ms-transition:all 0.2s ease-in ;
+        -o-transition:all 0.2s ease-in ;
+}
+& .hiremebtn:hover{
+   box-shadow: 0 0 4rem rgba(0, 0, 255, 0.637);
+   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   -o-transform: scale(1.1);
+
+    
+      
+    }
+  
+}
+& .banner-title{
+    font-size: 3rem;
+   color:#fff;
+   font-family: 'Dancing Script', cursive;
+
+
+}
+
+& .banner-heading{
+    font-size: 8rem;
+    color: #fff;
+
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+
+
+}
+@keyframes upDown {
+    0%{
+        transform:translateY(-4rem)    ;
+        -webkit-transform:translateY(-4rem)    ;
+        -moz-transform:translateY(-4rem)    ;
+        -ms-transform:translateY(-4rem)    ;
+        -o-transform:translateY(-4rem)    ;
+}
+100%{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+    
+}
+
+@media(max-width:768px){
+    .banner .banner-heading{
+        font-size: 4rem;
+
+    }
+}
